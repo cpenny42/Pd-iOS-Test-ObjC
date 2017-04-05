@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "PdAudioController.h"
+#import "PdDispatcher.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [PdBase openFile:@"pdPatch.pd" path:[[NSBundle mainBundle] resourcePath]];
 }
 
 
